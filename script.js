@@ -18,20 +18,18 @@ for (elm of elms) {
 
 // TODO: select and change the p tags
 //       then loop through the elements and change them.
-let places;
-places = document.querySelectorAll("p");
-for (place of places) {
-  place.style.color = "burlywood";
-  place.style.backgroundColor = "maroon";
+elms = document.querySelectorAll("p");
+for (elm of elms) {
+  elm.style.color = "burlywood";
+  elm.style.backgroundColor = "maroon";
 }
 
 // TODO: select and change the span tags
 //       then loop through the elements and change them.
-let countries;
-countries = document.querySelectorAll("span");
-for (country of countries) {
-  country.style.color = "powderblue";
-  country.style.backgroundColor = "salmon";
+elms = document.querySelectorAll("span");
+for (elm of elms) {
+  elm.style.color = "powderblue";
+  elm.style.backgroundColor = "salmon";
 }
 
 // TODO: Go back to index.html and add
@@ -44,9 +42,15 @@ for (country of countries) {
 // HINT: You can try...
 //       elm.style.position = "relative"
 //       elm.style.top = "-10px"
-let cities;
-cities = document.querySelectorAll(".jump");
-for (city of cities) {
-  city.style.position = "relative";
-  city.style.top = "-10px";
+elms = document.querySelectorAll(".jump");
+function oneJump(e) {
+  elm = e.target;
+  elm.style.position = "relative";
+  elm.style.top = "-10px";
+  elm.style.color = "skyblue";
+  elm.style.backgroundColor = "midnightblue";
+}
+
+for (jump of elms) {
+  jump.onclick = oneJump;
 }
