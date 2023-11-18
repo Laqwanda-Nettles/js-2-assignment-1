@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript 2 -- Assignment 1</title>
+    <style>
+      .jump {
+        width: 250px;
+        height: 40px;
+        background-color: "midnightblue";
+        transition: opacity 2s;
+      }
+    </style>
   </head>
   <body>
     <!-- TODO 1: Make 10 H1 tags -->
@@ -20,8 +28,10 @@
 
     <!-- TODO 2: Make 10 p tags -->
     <!-- You can make them here, or under each h1 tag, as you wish. -->
-    <p>Tokyo, <span class="jump">Japan</span></p>
+    <p>Tokyo, <span id="country1" class="jump">Japan</span></p>
+    <button onclick="fadeOut()">Play</button>
     <p>Paris, <span class="jump">France</span></p>
+    <button>Play</button>
     <p>Barcelona, <span class="jump">Spain</span></p>
     <p>Lisbon, <span class="jump">Portugal</span></p>
     <p>London, <span class="jump">England</span></p>
