@@ -54,3 +54,7 @@ function oneJump(e) {
 for (jump of elms) {
   jump.onclick = oneJump;
 }
+function fadeOut() {
+  const country = document.getElementById("country1");
+  country.style.opacity = 0;
+}
