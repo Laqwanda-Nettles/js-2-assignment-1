@@ -56,5 +56,5 @@ for (jump of elms) {
 }
 function fadeOut() {
   const country = document.getElementById("country1");
-  country.style.opacity = 0;
+  country.style.opacity = 0.5;
 }
