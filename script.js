@@ -43,83 +43,17 @@ for (elm of elms) {
 //       elm.style.position = "relative"
 //       elm.style.top = "-10px"
 
-function fadeOut() {
-  const country = document.getElementById("country1");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
+elms = document.querySelectorAll(".jump");
+
+function oneJump(event) {
+  elm = event.target.style;
+  elm.transition = "3s";
+  elm.position = "relative";
+  elm.top = "-10px";
+  elm.color = "skyblue";
+  elm.backgroundColor = "midnightblue";
+  elm.opacity = 0.5;
 }
-function fadeOutTwo() {
-  const country = document.getElementById("2");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutThree() {
-  const country = document.getElementById("3");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutFour() {
-  const country = document.getElementById("4");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutFive() {
-  const country = document.getElementById("5");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutSix() {
-  const country = document.getElementById("6");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutSeven() {
-  const country = document.getElementById("7");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutEight() {
-  const country = document.getElementById("8");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutNine() {
-  const country = document.getElementById("9");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
-}
-function fadeOutTen() {
-  const country = document.getElementById("10");
-  country.style.opacity = 0.5;
-  country.style.position = "relative";
-  country.style.top = "-10px";
-  country.style.color = "skyblue";
-  country.style.backgroundColor = "midnightblue";
+for (jump of elms) {
+  jump.onclick = oneJump;
 }
